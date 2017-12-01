@@ -1,0 +1,569 @@
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-family: "Jura", sans-serif;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Parallax Scroll
+   ========================================================================== */
+body, html {
+  height: 100%;
+  min-height: 100%;
+  background-color: #000000;
+}
+
+body {
+  font-family: "Jura", "Arial", serif;
+}
+
+.no-js {
+  padding-top: 106px;
+}
+
+h2{
+  font-family: "Pirata One", "Arial", serif;
+  margin-top: 0;
+}
+
+.loading {
+  background: url('../img/ico_loading.gif') no-repeat center center;
+}
+
+section {
+  min-width: 960px;
+  opacity: 0;
+}
+
+.loaded section,
+.no-js section {
+  opacity: 1;
+  -webkit-transition: opacity 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+#preload {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bcg {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.hsContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.51);
+}
+
+.hsContent {
+  max-width: 1000px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.hsContent h2  {
+  color: white;
+  font-size: 200px;
+  line-height: 15px;
+  margin-bottom: 12px;
+}
+
+.hsContent p {
+  width: 700px;
+  margin-top: 100px;
+  font-family: "Jura", serif;
+  line-height: 30px;
+  font-size: 20px;
+  color: white;
+}
+
+.hsContent a {
+  position: relative;
+  border-bottom: 2px solid yellow;
+  cursor: pointer;
+}
+/*a span img { position:absolute; display:none; z-index:99; }
+a:hover span img{ display:block; }*/
+
+.hsContent a span img{
+  position: absolute;
+  display: none;
+  z-index: 99;
+  opacity: 0.5;
+  transition: .5s;
+}
+
+.hsContent a:hover span img {
+  display: block;
+  opacity: 1;
+  transition: .5s;
+}
+
+.hsContent a span iframe{
+  position: absolute;
+  display: none;
+  z-index: 99;
+  opacity: 0.5;
+  transition: .5s;
+}
+
+.hsContent a:hover span iframe{
+  display: block;
+  opacity: 1;
+  transition: .5s;
+}
+
+/* Slide 1 */
+#slide-1 .bcg {background-image:url('https://i.imgur.com/AT4X09p.gif')}
+#slide-1 .hsContent {
+  width: 100%;
+  bottom: 100px;
+  left: 140px;
+  top: auto;
+}
+
+/* Slide 2 */
+#slide-2 .bcg {
+  background-image:url('https://vignette3.wikia.nocookie.net/daftpunk/images/1/1f/Darlin.jpg/revision/latest?cb=20170512202504')
+}
+
+#slide-2 .hsContent {
+  margin-left: -450px;
+  top: 20px;
+}
+
+#slide-2 h2 {
+  position: fixed;
+  margin-top: 75%;
+  width: 150%;
+}
+
+#guy-thomas{
+  width: 80%;
+  left: 50px;
+  top: 25px;
+}
+
+#darlin{
+  left: 0px;
+  bottom: -150px;
+}
+
+#thrash{
+  left: -20px;
+  bottom: 20px;
+}
+
+/* Slide 3 */
+#slide-3 .bcg {background-image:url('http://www.6am-group.com/wp-content/uploads/2016/10/Daft-Punk-no-helmet.jpg')}
+#slide-3 .hsContent {
+  left: 550px;
+  top: 300px;
+}
+
+#slide-3 h2 {
+  color: white;
+  width: 150%;
+}
+
+#new-wave{
+  left: 0px;
+  bottom: 20px;
+}
+
+#funk{
+  left: 1px;
+  bottom: 20px;
+}
+
+#homework{
+  left: 0px;
+  bottom: 20px;
+}
+
+#first-show{
+/*  bottom: 20px;
+  left: 300px;*/
+  left: 0px;
+  bottom: 20px;
+}
+
+/* Slide 4 */
+#slide-4 .bcg {background-image:url('http://25.media.tumblr.com/15d0fa588f17eb6c47ef8c2eb9cc611d/tumblr_mm5lvbn7aS1rh8icyo1_500.gif')}
+#slide-4 .hsContent {
+  left: 120px;
+  top: 250px;
+}
+
+#slide-4 h2 {
+  background: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#discovery{
+  left: 0px;
+}
+
+#one-more, #hbfs, #around, #daft-club{
+  left: 0px;
+  bottom: 20px;
+}
+
+#interstellar{
+  left: 0px;
+  bottom: 20px;
+}
+
+#leiji{
+  width: 400px;
+  left: 0px;
+  bottom: 20px;
+}
+
+/* Slide 5 */
+#slide-5 .bcg {background-image:url('https://upload.wikimedia.org/wikipedia/commons/3/37/Daftpunk.jpg')}
+
+#slide-5 .hsContent {
+  left: 20px;
+  top: 50px;
+}
+
+#slide-5 h2 {
+  margin-top: 100px;
+  text-align: left;
+  color: white;
+  width: 150%;
+}
+
+#human, #robot, #technologic{
+  left: 0px;
+}
+
+#coachella{
+  width: 310px;
+  left: 0px;
+  bottom: 20px;
+}
+
+#alive, #japan, #never{
+  left:0px;
+  bottom: 20px;
+}
+
+/* Slide 6 */
+#slide-6 .bcg {background-image:url('http://share.gifyoutube.com/yAZ509.gif')}
+
+#slide-6 .hsContent {
+  left: 120px;
+  top: 40px;
+}
+
+#slide-6 h2 {
+  margin-top: 100px;
+  color: white;
+  width: 150%;
+}
+
+#grammys{
+  left: 0px;
+  top: 25px;
+}
+
+#award{
+  width: 600px;
+  left: 0px;
+  top: 25px;
+}
+
+#tron{
+  height: 450px;
+  left: 0px;
+  bottom: 25px;
+}
+
+#joe{
+  width: 350px;
+  left: 0px;
+  bottom: 25px;
+}
+
+#djs, #soundtrack, #msg{
+  left:0px;
+  bottom: 25px;
+}
+
+/* Slide 7 */
+#slide-7 .bcg {background-image:url('https://78.media.tumblr.com/725a8f8b04669d407e1863d543167382/tumblr_o3jaerHk7O1v1wznbo1_500.gif')}
+
+#slide-7 .hsContent {
+  left: 620px;
+  top: 40px;
+}
+
+#slide-7 h2 {
+  margin-top: 100px;
+  color: white;
+  width: 150%;
+}
+
+#nile{
+  width: 600px;
+  right: 0px;
+  top: 25px;
+}
+
+#bill{
+  height: 400px;
+  right: 0px;
+  bottom: 25px;
+}
+
+#giorgio, #ram{
+  left: 0px;
+  top: 25px;
+}
+
+#collab, #lucky, #docu{
+  right: 0px;
+  bottom: 25px;
+}
+
+/* Slide 8 */
+#slide-8 .bcg {background-image:url('https://78.media.tumblr.com/725a8f8b04669d407e1863d543167382/tumblr_o3jaerHk7O1v1wznbo1_500.gif')}
+
+#slide-8 .hsContent {
+  left: 20px;
+  top: 40px;
+}
+
+#slide-8 h2 {
+  margin-top: 100px;
+  color: white;
+  width: 150%;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
