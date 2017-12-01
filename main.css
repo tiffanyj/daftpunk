@@ -1,8 +1,5 @@
 
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
+/*General Styles*/
 html,
 button,
 input,
@@ -12,7 +9,7 @@ textarea {
 }
 
 body {
-    font-family: "Jura", sans-serif;
+    font-family: "Jura", "Arial", sans-serif;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -21,9 +18,7 @@ textarea {
     resize: vertical;
 }
 
-/* ==========================================================================
-   Parallax Scroll
-   ========================================================================== */
+/*Parallax*/ 
 body, html {
   height: 100%;
   min-height: 100%;
@@ -31,18 +26,19 @@ body, html {
 }
 
 body {
-  font-family: "Jura", "Arial", serif;
+  font-family: "Jura", "Arial", sans-serif;
+}
+
+h2{
+  font-family: "Pirata One", "Arial", sans-serif;
+  margin-top: 0;
 }
 
 .no-js {
   padding-top: 106px;
 }
 
-h2{
-  font-family: "Pirata One", "Arial", serif;
-  margin-top: 0;
-}
-
+/*Loading Animation*/
 .loading {
   background: url('../img/ico_loading.gif') no-repeat center center;
 }
@@ -73,6 +69,7 @@ main {
   left: 0;
 }
 
+/*Background Content*/
 .bcg {
   background-position: center center;
   background-repeat: no-repeat;
@@ -82,6 +79,7 @@ main {
   width: 100%;
 }
 
+/*Slide Content*/ 
 .hsContainer {
   width: 100%;
   height: 100%;
@@ -118,9 +116,8 @@ main {
   border-bottom: 2px solid yellow;
   cursor: pointer;
 }
-/*a span img { position:absolute; display:none; z-index:99; }
-a:hover span img{ display:block; }*/
 
+/*Links with images*/
 .hsContent a span img{
   position: absolute;
   display: none;
@@ -129,12 +126,14 @@ a:hover span img{ display:block; }*/
   transition: .5s;
 }
 
+/*Display images on hover*/
 .hsContent a:hover span img {
   display: block;
   opacity: 1;
   transition: .5s;
 }
 
+/*Links with embedded videos*/
 .hsContent a span iframe{
   position: absolute;
   display: none;
@@ -143,40 +142,39 @@ a:hover span img{ display:block; }*/
   transition: .5s;
 }
 
+/*Display embedded videos on hover*/
 .hsContent a:hover span iframe{
   display: block;
   opacity: 1;
   transition: .5s;
 }
 
-/* Slide 1 */
+/* Introduction Slide */
 #slide-1 .bcg {background-image:url('https://i.imgur.com/AT4X09p.gif')}
 #slide-1 .hsContent {
   width: 100%;
+  margin-left: 120px;
   bottom: 100px;
-  left: 140px;
   top: auto;
 }
 
-/* Slide 2 */
+/* 1987 - 1992 Slide */
 #slide-2 .bcg {
-  background-image:url('https://vignette3.wikia.nocookie.net/daftpunk/images/1/1f/Darlin.jpg/revision/latest?cb=20170512202504')
+  background-image: url('https://vignette3.wikia.nocookie.net/daftpunk/images/1/1f/Darlin.jpg/revision/latest?cb=20170512202504')
 }
 
 #slide-2 .hsContent {
-  margin-left: -450px;
-  top: 20px;
+  left:120px;
+  top: 185px;
 }
 
 #slide-2 h2 {
-  position: fixed;
-  margin-top: 75%;
   width: 150%;
 }
 
 #guy-thomas{
-  width: 80%;
-  left: 50px;
+  width: 400px;
+  left: 0px;
   top: 25px;
 }
 
@@ -190,11 +188,10 @@ a:hover span img{ display:block; }*/
   bottom: 20px;
 }
 
-/* Slide 3 */
+/* 1993 - 1999 */
 #slide-3 .bcg {background-image:url('http://www.6am-group.com/wp-content/uploads/2016/10/Daft-Punk-no-helmet.jpg')}
 #slide-3 .hsContent {
-  left: 550px;
-  top: 300px;
+  left: 43%;
 }
 
 #slide-3 h2 {
@@ -218,14 +215,12 @@ a:hover span img{ display:block; }*/
 }
 
 #first-show{
-/*  bottom: 20px;
-  left: 300px;*/
   left: 0px;
   bottom: 20px;
 }
 
-/* Slide 4 */
-#slide-4 .bcg {background-image:url('http://25.media.tumblr.com/15d0fa588f17eb6c47ef8c2eb9cc611d/tumblr_mm5lvbn7aS1rh8icyo1_500.gif')}
+/* 1999 - 2003 */
+#slide-4 .bcg {background-image:url('https://25.media.tumblr.com/15d0fa588f17eb6c47ef8c2eb9cc611d/tumblr_mm5lvbn7aS1rh8icyo1_500.gif')}
 #slide-4 .hsContent {
   left: 120px;
   top: 250px;
@@ -257,11 +252,11 @@ a:hover span img{ display:block; }*/
   bottom: 20px;
 }
 
-/* Slide 5 */
+/* 2004 - 2007 */
 #slide-5 .bcg {background-image:url('https://upload.wikimedia.org/wikipedia/commons/3/37/Daftpunk.jpg')}
 
 #slide-5 .hsContent {
-  left: 20px;
+  left: 43%;
   top: 50px;
 }
 
@@ -287,8 +282,8 @@ a:hover span img{ display:block; }*/
   bottom: 20px;
 }
 
-/* Slide 6 */
-#slide-6 .bcg {background-image:url('http://share.gifyoutube.com/yAZ509.gif')}
+/* 2007 - 2011 */
+#slide-6 .bcg {background-image:url('https://share.gifyoutube.com/yAZ509.gif')}
 
 #slide-6 .hsContent {
   left: 120px;
@@ -329,7 +324,7 @@ a:hover span img{ display:block; }*/
   bottom: 25px;
 }
 
-/* Slide 7 */
+/* 2011 - 2016 */
 #slide-7 .bcg {background-image:url('https://78.media.tumblr.com/725a8f8b04669d407e1863d543167382/tumblr_o3jaerHk7O1v1wznbo1_500.gif')}
 
 #slide-7 .hsContent {
@@ -349,7 +344,7 @@ a:hover span img{ display:block; }*/
   top: 25px;
 }
 
-#bill{
+#bill, #grammy{
   height: 400px;
   right: 0px;
   bottom: 25px;
@@ -365,12 +360,13 @@ a:hover span img{ display:block; }*/
   bottom: 25px;
 }
 
-/* Slide 8 */
-#slide-8 .bcg {background-image:url('https://78.media.tumblr.com/725a8f8b04669d407e1863d543167382/tumblr_o3jaerHk7O1v1wznbo1_500.gif')}
+
+/* 2016 - 2017 */
+#slide-8 .bcg {background-image:url('https://www.frenchtouchinfo.com/wp-content/uploads/2012/05/KanyeWestDaftPunk02.jpg')}
 
 #slide-8 .hsContent {
-  left: 20px;
-  top: 40px;
+  left: 50vh;
+  top: 150px;
 }
 
 #slide-8 h2 {
@@ -378,192 +374,447 @@ a:hover span img{ display:block; }*/
   color: white;
   width: 150%;
 }
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
 
-/*
- * Image replacement
- */
-
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
+#starboy, #feel{
+  left: 0px;
+  bottom: 25px;
 }
 
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
+/* Responsive Styling */
+@media only screen and (max-width: 800px) {
+    body, html {
+    width: 100%;
+    min-height: 100%;
+    background-color: #000000;
+  }
 
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
+  body {
+    font-family: "Jura", "Arial", sans-serif;
+  }
 
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
+  .no-js {
+    padding-top: 106px;
+  }
 
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
+  h2{
+    font-family: "Pirata One", "Arial", sans-serif;
+    margin-top: 0;
+  }
 
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
+  .loading {
+    background: url('../img/ico_loading.gif') no-repeat center center;
+  }
+
+  section {
+    min-width: 100%;
+    opacity: 0;
+  }
+
+  .loaded section,
+  .no-js section {
+    opacity: 1;
+    -webkit-transition: opacity 300ms ease-out;
+    -moz-transition: opacity 300ms ease-out;
+    transition: opacity 300ms ease-out;
+  }
+
+  main {
+    overflow-x: hidden;
+  }
+
+  #preload {
     width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* Background Styling  */
+  .bcg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .hsContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.51);
+  }
+
+  .hsContent {
+    max-width: 100%;
+    position: absolute;
+    left: 40%;
+  }
+
+  .hsContent h2  {
+    color: white;
+    font-size: 80px;
+  }
+
+  .hsContent p {
+    width: 100%;
+    margin-top: 40px;
+    font-family: "Jura", "Arial", sans-serif;
+    line-height: 20px;
+    font-size: 14px;
+    color: white;
+  }
+
+  /* Links Styling */
+  .hsContent a {
+    position: relative;
+    border-bottom: 2px solid yellow;
+    cursor: pointer;
+  }
+
+  .hsContent a span img{
+    position: absolute;
+    display: none;
+    z-index: 99;
+    opacity: 0.5;
+    transition: .5s;
+  }
+
+  .hsContent a:hover span img {
+    display: block;
+    opacity: 1;
+    transition: .5s;
+  }
+
+  .hsContent a span iframe{
+    position: absolute;
+    display: none;
+    z-index: 99;
+    opacity: 0.5;
+    transition: .5s;
+  }
+
+  .hsContent a:hover span iframe{
+    display: block;
+    opacity: 1;
+    transition: .5s;
+  }
+
+  /* Slide 1 */
+  #slide-1 .bcg {background-image:url('https://i.imgur.com/AT4X09p.gif')}
+  #slide-1 .hsContent {
+  width: 75%;
+  top: 60%;
+  margin-left: 12%;
+  }
+
+  #slide-1 h2 {
+  margin-bottom: 10px;
+  color: white;
+  width: 100%;  
+  }
+
+  /* Slide 2 */
+  #slide-2 .bcg {
+    background-image:url('https://img.tel.pmdstatic.net/scale/http.3A.2F.2Fimages.2Eone.2Eprismamedia.2Ecom.2Fnews.2F5.2F2.2Fb.2F9.2Ff.2F1.2Ff.2Fe.2F0.2Ff.2Fb.2F8.2Fb.2Fd.2F8.2F4.2Ejpeg/540xauto/quality/80/image.jpeg')
+  }
+
+  #slide-2 .hsContent {
+    margin-left: 0%;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+  }
+
+  #slide-2 h2 {
+    width: 150%;
+  }
+
+  #guy-thomas{
+    width: 180%;
+    left: 0px;
+    top: 20px;
+  }
+
+  #darlin{
+    width: 250px;
+    height: 250px;
+    left: 0px;
+    bottom: -150px;
+  }
+
+  #thrash{
+    width: 250px;
+    right: 150px;
+    bottom: 20px;
+  }
+
+  /* Slide 3 */
+  #slide-3 .bcg {background-image:url('https://static.highsnobiety.com/wp-content/uploads/2017/01/20173739/daft-punk-homework-10-facts-07-480x720.jpg')}
+
+  #slide-3 .hsContent {
+    margin-left: 0px;
+    margin-top: 0px;
+    top: 0%;
+    left: 10%;
+    width: 80%;
+  }
+
+  #slide-3 h2 {
+    color: white;
+    width: 150%;
+  }
+
+  #new-wave{
+    width: 250px;
+    height: 250px;
+    left: 0px;
+    bottom: 20px;
+  }
+
+  #funk{
+    width: 200px;
+    height: 100px;
+    left: 0px;
+    bottom: 20px;
+  }
+
+  #homework{
+    width: 300px;
+    left: -80px;
+    bottom: 20px;
+  }
+
+  #first-show{
+    width: 200px;
+    height: 150px;
+    right: 100px;
+    bottom: 20px;
+  }
+
+  /* Slide 4 */
+  #slide-4 .bcg {background-image:url('https://25.media.tumblr.com/15d0fa588f17eb6c47ef8c2eb9cc611d/tumblr_mm5lvbn7aS1rh8icyo1_500.gif')}
+  #slide-4 .hsContent {
+    margin-left: 0px;
+    margin-top: 0px;
+    top: 0%;
+    left: 10%;
+    width: 80%;
+  }
+
+  #discovery{
+    left: 0px;
+  }
+
+  #one-more, #hbfs, #interstellar{
+    width: 200px;
+    height: 200px;
+    left: -50px;
+    bottom: 20px;
+  }
+
+  #daft-club{
+    width: 200px;
+    height: 100px;
+    left: 0px;
+    bottom: 20px;
+  }
+
+  #leiji{
+    width: 150px;
+    left: -20px;
+    bottom: 20px;
+  }
+
+  /* Slide 5 */
+  #slide-5 .bcg {background-image:url('https://upload.wikimedia.org/wikipedia/commons/3/37/Daftpunk.jpg')}
+
+  #slide-5 .hsContent {
+    margin-left: 0px;
+    margin-top: 0px;
+    top: 8%;
+    left: 10%;
+    width: 80%;
+  }
+
+  #slide-5 h2 {
+    color: white;
+    width: 150%;
+  }
+
+  #human, #technologic{
+    left: 0px;
+  }
+
+  #coachella{
+    width: 200px;
+    left: -100px;
+    bottom: 20px;
+  }
+
+  #never{
+    width: 200px;
+    height: 200px;
+    left:0px;
+    bottom: 20px;
+  }
+
+  #japan, #robot{
+    width: 200px;
+    height: 200px;
+    left: -100px;
+    bottom: 20px;
+  }
+
+  #alive{
+    width: 200px;
+    left: -20px;
+    bottom: 20px;
+  }
+
+  /* Slide 6 */
+  #slide-6 .bcg {background-image:url('https://share.gifyoutube.com/yAZ509.gif')}
+
+  #slide-6 .hsContent {
+    margin-left: 0px;
+    margin-top: 0px;
+    top: 8%;
+    left: 10%;
+    width: 80%;
+  }
+
+  #slide-6 h2 {
+    color: white;
+    width: 150%;
+  }
+
+  #grammys{
+    width: 200px;
+    height: 200px;
+    left: 0px;
+    top: 25px;
+  }
+
+  #award{
+    width: 300px;
+    left: 0px;
+    top: 20px;
+  }
+
+  #djs{
+    width: 300px;
+    left: -120px;
+    top: 20px;
+  }
+
+  #tron{
+    height: 300px;
+    left: 0px;
+    bottom: 20px;
+  }
+
+  #joe{
+    width: 200px;
+    left: -20px;
+    top: 20px;
+  }
+
+  #soundtrack{
+    left:0px;
+    bottom: 25px;
+  }
+
+  #msg{
+    width: 200px;
+    height: 200px;
+    left: 0px;
+    bottom: 20px;
+  }
+
+  /* Slide 7 */
+  #slide-7 .bcg {background-image:url('https://78.media.tumblr.com/725a8f8b04669d407e1863d543167382/tumblr_o3jaerHk7O1v1wznbo1_500.gif')}
+
+  #slide-7 .hsContent {
+    margin-left: 0px;
+    margin-top: 0px;
+    top: 1%;
+    left: 10%;
+    width: 80%;
+  }
+
+  #slide-7 h2 {
+    color: white;
+    width: 150%;
+  }
+
+  #nile{
+    width: 230px;
+    left: 0px;
+    top: 20px;
+  }
+
+  #grammy{
+    height: 150px;
+    left: 0px;
+    bottom: 20px;
+  }
+
+  #bill{
+    height: 150px;
+    width: 200px;
+    left: 0px;
+    bottom: 20px;
+  }
+
+  #giorgio, #ram{
+    width: 250px;
+    left: 0px;
+    top: 25px;
+  }
+
+ #collab, #lucky{
+    width: 200px;
+    height: 200px;
+    left: 0px;
+    top: 20px;
+  }
+
+  #docu{
+    width: 200px;
+    height: 200px;
+    right: 0px;
+    bottom: 20px;
+  }
+
+
+  /* Slide 8 */
+  #slide-8 .bcg {background-image:url('https://vignette.wikia.nocookie.net/unanything/images/6/63/Daft_Punk.jpg/revision/latest?cb=20160823201145')}
+
+  #slide-8 .hsContent {
+    margin-left: 0px;
+    margin-top: 0px;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+  }
+
+  #slide-8 h2 {
+    color: white;
+    width: 150%;
+  }
+
+  #feel, #starboy{
+    width: 200px;
+    height: 200px;
+    left: 0px;
+    top: 20px;
+  }
+
+
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
